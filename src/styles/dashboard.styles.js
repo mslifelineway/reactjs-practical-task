@@ -18,7 +18,9 @@ export default makeStyles((theme) => ({
   avatar: {
     width: "20%",
     height: "auto",
-    margin: "0 auto",
+    [theme.breakpoints.down("xs")]: {
+      width: "80%"
+    },
   },
   modal: {
     position: "fixed",
